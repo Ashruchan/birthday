@@ -1,0 +1,6 @@
+{
+  "name": "Birthday Surprise Website",
+  "description": "A beautiful, vertical-scroll, nostalgic visual diary for a close friend's birthday, designed with overlapping text, warm golden hour to night transitions, and expressive typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
