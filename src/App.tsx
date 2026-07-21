@@ -237,7 +237,7 @@ export default function App() {
   // Handle HTML5 Audio initialization and tracking
   useEffect(() => {
     const audio = new Audio();
-    audio.src = "/src/assets/music.mp3";
+    audio.src = "/music.mp3";
     audio.loop = true;
     audio.volume = volume;
     audioRef.current = audio;
@@ -252,7 +252,7 @@ export default function App() {
     };
     const onError = () => {
       console.log("Audio failed to load from:", audio.src);
-      setAudioError("Track 'music.mp3' not uploaded or ready yet. Add/overwrite your song inside 'src/assets/music.mp3' in the codebase to play!");
+      setAudioError("Track 'music.mp3' not uploaded or ready yet. Add/overwrite your song inside '/music.mp3' in the codebase to play!");
     };
 
     audio.addEventListener("play", onPlay);
@@ -344,7 +344,7 @@ export default function App() {
         setIsAudioPlaying(true);
       } catch (err) {
         console.error("Custom audio play failed:", err);
-        setAudioError("Track 'music.mp3' not uploaded or ready yet. Add/overwrite your song inside 'src/assets/music.mp3' in the codebase to play!");
+        setAudioError("Track 'music.mp3' not uploaded or ready yet. Add/overwrite your song inside '/music.mp3' in the codebase to play!");
         setIsAudioPlaying(false);
       }
     }
@@ -562,7 +562,7 @@ export default function App() {
 
                 <div className="border-t border-dashed border-stone-200 dark:border-stone-800 pt-3 mt-1 text-center">
                   <p className="text-[9px] text-stone-400 dark:text-stone-500 leading-relaxed font-mono">
-                    *Note: Place your song file inside your project codebase by overwriting the file <span className="font-bold text-amber-600">/src/assets/music.mp3</span> to play your personal soundtrack!
+                    *Note: Place your song file inside your project codebase by overwriting the file <span className="font-bold text-amber-600">/music.mp3</span> to play your personal soundtrack!
                   </p>
                 </div>
               </div>
@@ -658,7 +658,7 @@ export default function App() {
               >
                 <div className="aspect-square w-full bg-stone-200 overflow-hidden relative border border-stone-100">
                   <img 
-                    src="/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (1).jpeg" 
+                    src="/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (1).jpeg" 
                     alt="Sanjana candid photo" 
                     className="w-full h-full object-cover saturate-105 brightness-100"
                     referrerPolicy="no-referrer"
@@ -684,7 +684,7 @@ export default function App() {
 
                 <div className="aspect-square w-full bg-stone-200 overflow-hidden relative border border-stone-100">
                   <img 
-                    src="/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.32 AM.jpeg" 
+                    src="/images/WhatsApp Image 2026-07-21 at 11.55.32 AM.jpeg" 
                     alt="Sanjana smiling photo" 
                     className="w-full h-full object-cover saturate-110 sepia-[5%] brightness-100"
                     referrerPolicy="no-referrer"
@@ -743,7 +743,7 @@ export default function App() {
               >
                 <div className="aspect-square w-full bg-stone-300 overflow-hidden relative border border-stone-200">
                   <img 
-                    src="/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (2).jpeg" 
+                    src="/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (2).jpeg" 
                     alt="Sanjana traditional look" 
                     className="w-full h-full object-cover saturate-105 brightness-95"
                     referrerPolicy="no-referrer"
@@ -769,7 +769,7 @@ export default function App() {
 
                 <div className="aspect-square w-full bg-stone-300 overflow-hidden relative border border-stone-200">
                   <img 
-                    src="/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.33 AM.jpeg" 
+                    src="/images/WhatsApp Image 2026-07-21 at 11.55.33 AM.jpeg" 
                     alt="Sanjana selfie" 
                     className="w-full h-full object-cover saturate-105 brightness-95"
                     referrerPolicy="no-referrer"
@@ -825,7 +825,7 @@ export default function App() {
 
               <div className="aspect-square w-full bg-stone-900 overflow-hidden relative border border-stone-800">
                 <img 
-                  src="/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.34 AM.jpeg" 
+                  src="/images/WhatsApp Image 2026-07-21 at 11.55.34 AM.jpeg" 
                   alt="Sanjana camera selfie" 
                   className="w-full h-full object-cover opacity-95 saturate-100 contrast-100"
                   referrerPolicy="no-referrer"
@@ -1071,14 +1071,14 @@ export default function App() {
                 <img 
                   src={
                     activePolaroid === 1 
-                      ? "/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.32 AM.jpeg"
+                      ? "/images/WhatsApp Image 2026-07-21 at 11.55.32 AM.jpeg"
                       : activePolaroid === 2
-                      ? "/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (1).jpeg"
+                      ? "/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (1).jpeg"
                       : activePolaroid === 3
-                      ? "/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.33 AM.jpeg"
+                      ? "/images/WhatsApp Image 2026-07-21 at 11.55.33 AM.jpeg"
                       : activePolaroid === 4
-                      ? "/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (2).jpeg"
-                      : "/src/assets/images/WhatsApp Image 2026-07-21 at 11.55.34 AM.jpeg"
+                      ? "/images/WhatsApp Image 2026-07-21 at 11.55.33 AM (2).jpeg"
+                      : "/images/WhatsApp Image 2026-07-21 at 11.55.34 AM.jpeg"
                   } 
                   alt="Expanded Memory" 
                   className="w-full h-full object-cover"
